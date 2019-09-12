@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="print" class="cn.kgc.spring.print.Print">
+        <property name="inkBox" ref="gray"></property>
+        <property name="paper" ref="a4"></property>
+    </bean>
+
+    <bean id="a4" class="cn.kgc.spring.impl.A4"></bean>
+    <bean id="gray" class="cn.kgc.spring.impl.Gray"></bean>
+</beans>
